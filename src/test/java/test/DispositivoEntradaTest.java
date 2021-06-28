@@ -9,8 +9,6 @@ import org.junit.Test;
 
 public class DispositivoEntradaTest {
 
-    DispositivosEntrada Fiddler = new DispositivosEntrada("USB", "Fiddler");
-    DispositivosEntrada Logitech = new DispositivosEntrada("Bluetooth", "Logitech");
     @BeforeClass
     public static void inicializacionBC () {
         System.out.println("Inicializando BeforeClassBC...");
@@ -25,12 +23,13 @@ public class DispositivoEntradaTest {
     }
 
     @Test
-    public void comprobacionDispositivoEntrada() {
-            assertNotNull(Fiddler );
-            assertNotNull(Logitech );
+    public void comprobacionTipoDeEntradaNotNull() {
+            DispositivosEntrada Fiddler = new DispositivosEntrada("USB", "Fiddler");
+            DispositivosEntrada Logitech = new DispositivosEntrada("Bluetooth", "Logitech");
+            assertNotNull(Fiddler);
+            assertNotNull(Logitech);
+    }
 
-            //System.out.println("Dispositivo ingresado correctamente");
-        }
 
 }
 
