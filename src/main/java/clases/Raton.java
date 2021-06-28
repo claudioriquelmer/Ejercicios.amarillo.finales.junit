@@ -62,7 +62,7 @@ public class Raton extends DispositivosEntrada {
 
     @Override
     public String toString() {
-        return "Raton " +"\nId Ratón : " +idRaton+ "" + super.toString();
+        return "Raton " +"\nId Ratón : " +idRaton+ "\nPrecio" +precio+ "" + super.toString();
     }
 
 }

@@ -59,6 +59,6 @@ public class Teclado extends DispositivosEntrada {
 
     @Override
     public String toString() {
-        return "Teclado " +"\nId Teclado : " +idTeclado+ "" +super.toString();
+        return "Teclado " +"\nId Teclado : " +idTeclado+ "\nPrecio : " + precio + "" + super.toString();
     }
 }
