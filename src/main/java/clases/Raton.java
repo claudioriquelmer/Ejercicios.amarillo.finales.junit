@@ -1,6 +1,8 @@
 package clases;
 
 public class Raton extends DispositivosEntrada {
+
+
     //Atributos
     private final int idRaton;
     private static int contadorRatones;
@@ -13,6 +15,14 @@ public class Raton extends DispositivosEntrada {
     public Raton(String tipoEntrada, String marca) {
         super(tipoEntrada, marca);
         idRaton = ++contadorRatones;
+    }
+
+    public int getIdRaton() {
+        return idRaton;
+    }
+
+    public static int getContadorRatones() {
+        return contadorRatones;
     }
 
     @Override
