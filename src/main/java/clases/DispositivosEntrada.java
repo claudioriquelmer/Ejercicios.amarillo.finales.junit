@@ -30,6 +30,15 @@ public class DispositivosEntrada {
         this.marca = marca;
     }
 
+    public String confirmarMarcaDE () {
+        if (marca.length() == 0 || tipoEntrada.length() == 0) {
+            System.out.println("Debe ingresar una marca y/o tipo de entrada");
+        } else {
+            System.out.println("Marca Ingresada correctamente");
+        }
+        return marca;
+    }
+
     @Override
     public String toString() {
         return "\nTipo de Entrada : "+tipoEntrada+ "\nMarca : " +marca;

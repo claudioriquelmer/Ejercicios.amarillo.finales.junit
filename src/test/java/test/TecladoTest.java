@@ -2,7 +2,6 @@ package test;
 
 import static org.junit.Assert.*;
 
-import clases.Raton;
 import clases.Teclado;
 import org.junit.*;
 
@@ -18,9 +17,9 @@ public class TecladoTest {
 
     @Before
     public void inicializandoSetPruebasTeclado () {
+        System.out.println("Inicializando Set de pruebas clase Teclado...");
         tecladoMicrosoft = new Teclado("Minibin","Microsft", 10050);
         tecladoLogitech = new Teclado ("Bluetooth","Logitech", 12000);
-        System.out.println("Inicializando Set de pruebas clase Raton...");
     }
 
     @Test
@@ -33,8 +32,8 @@ public class TecladoTest {
     @Test
     public void testTecladoEquals () {
         //Segmentación de equivalencia con valores válidos
-        assertEquals(5,tecladoMicrosoft.getIdTeclado());
-        assertEquals(6,tecladoLogitech.getIdTeclado());
+        assertEquals(7,tecladoMicrosoft.getIdTeclado());
+        assertEquals(8,tecladoLogitech.getIdTeclado());
     }
 
     @Test
@@ -69,5 +68,6 @@ public class TecladoTest {
     public void comprobacionResultadosTeclado () {
         //System.out.println(tecladoMicrosoft);
         //System.out.println(tecladoLogitech);
+        System.out.println("Test Finalizado");
     }
 }

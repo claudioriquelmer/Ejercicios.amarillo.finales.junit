@@ -16,9 +16,9 @@ public class RatonTest {
 
     @Before
     public void inicializandoSetPruebasRaton () {
+        System.out.println("Inicializando Set de pruebas clase Raton...");
         mousseFiddler = new Raton("USB","Fiddler", 10050);
         mousseLogitech = new Raton("Bluetooth","Logitech", 12000);
-        System.out.println("Inicializando Set de pruebas clase Raton...");
     }
 
     @Test
@@ -31,8 +31,8 @@ public class RatonTest {
     @Test
     public void testRatonEquals () {
         //Prueba positiva con Equals
-        assertEquals(5,mousseFiddler.getIdRaton());
-        assertEquals(6,mousseLogitech.getIdRaton());
+        assertEquals(7,mousseFiddler.getIdRaton());
+        assertEquals(8,mousseLogitech.getIdRaton());
     }
 
     @Test
@@ -66,5 +66,6 @@ public class RatonTest {
     public void comprobacionResultadosRaton () {
         //System.out.println(mousseFiddler);
         //System.out.println(mousseLogitech);
+        System.out.println("Test Finalizado");
     }
 }
